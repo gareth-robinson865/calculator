@@ -61,3 +61,13 @@ class Calculator{
         this.operation = undefined
         this.previousOperand = ''
     }
+
+    //update the values that are inside of the display when a button is pressed
+    updateDisplay() {
+        this.currentOperandTextElement.innerText = this.currentOperand
+        if (this.operation != null) {
+            this.previousOperandTextElement.innerText = `${this.previousOperand} ${this.operation}`
+        }
+       
+    }
+}
