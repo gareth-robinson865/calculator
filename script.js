@@ -16,3 +16,9 @@ class Calculator{
     delete() {
         this.currentOperand = this.currentOperand.toString().slice(0, -1)
     }
+
+    //adding a number to the display
+    appendNumber(number) {
+        if(number === '.' && this.currentOperand.includes('.')) return
+        this.currentOperand = this.currentOperand.toString() + number.toString()
+    }
