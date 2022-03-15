@@ -11,3 +11,8 @@ class Calculator{
         this.previousOperand = ''
         this.operation = undefined
     }
+
+    //deleting just one number
+    delete() {
+        this.currentOperand = this.currentOperand.toString().slice(0, -1)
+    }
